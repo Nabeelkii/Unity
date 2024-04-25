@@ -1,23 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <title>My Unity Projects</title>
-
+  <title>List</title>
 <head>
   <style>
+   .hea{
+	text-align:center;
+}
    h1{
 	text-align:center;
 }
 </style>
  </head>
-
+<!--<img src="test.png" alt="If image cannot be displayed">-->
+<!--wrap something in  <a href> tag to link it, target=_unblank to open in new tab-->
  <body>
-<h1> My Unity Projects</h1>
-<hr/>
+  <a href="TheBasics.html" target=_unblank><h1 class="hea">TheBasics<h1></a>
+<form id="form" onsubmit="return false;">
+<p> 
+<button onclick="water()">Add</button>
+<input type="text" id="userInput" style="width: 90%;">
 
-  <a href="TheBasics.html" target=_unblank><h1>TheBasics</h1></a>
-<a href="Shoot.html" target=_unblank><h1>Shooting Game</h1></a>
-<a href="GameCollection.html" target=_unblank><h1>Game Collection</h1></a>
+
+</p>
+</form>
+<p style="text-align: center;" id="add"></p>
 
 
+
+<script>
+function water()
+{
+
+let input = document.getElementById("userInput").value;
+let btn=document.createElement("button");
+let brk=document.createElement("br")
+let brk2=document.createElement("br")
+if (input==''){  input="Empty";}
+btn.innerHTML=String(input);
+btn.onclick= function(){
+  btn.remove()
+  brk.remove()
+  brk2.remove()
+};
+btn.style.height="30px";
+document.getElementById("add").appendChild(brk);
+document.getElementById("add").appendChild(brk2);
+document.getElementById("add").insertBefore(btn,brk);
+//document.getElementById("add").appendChild(btn);
+
+document.getElementById("userInput").value='';
+
+}
+
+
+</script>
  </body>
 </html>
