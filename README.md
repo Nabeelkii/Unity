@@ -1,5 +1,7 @@
-Contains 3 games created in Unity
+Contains games created in Unity.
+
 The one on the front is the one that is being hosted on a website
+
 The are 2 other games inside the other projects, they have not been built to be hosted
 
 One is called 3D basics
