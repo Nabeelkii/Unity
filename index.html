@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <title>List</title>
+  <title>Unity</title>
 <head>
   <style>
    .hea{
@@ -11,48 +11,12 @@
 }
 </style>
  </head>
-<!--<img src="test.png" alt="If image cannot be displayed">-->
-<!--wrap something in  <a href> tag to link it, target=_unblank to open in new tab-->
  <body>
   <a href="TheBasics.html" target=_unblank><h1 class="hea">TheBasics<h1></a>
-<form id="form" onsubmit="return false;">
+  <a href="Shoot.html" target=_unblank><h1 class="hea">TheBasics<h1></a>
+ <a href="GameCollection.html" target=_unblank><h1 class="hea">TheBasics<h1></a>
 <p> 
-<button onclick="water()">Add</button>
-<input type="text" id="userInput" style="width: 90%;">
-
-
 </p>
 </form>
-<p style="text-align: center;" id="add"></p>
-
-
-
-<script>
-function water()
-{
-
-let input = document.getElementById("userInput").value;
-let btn=document.createElement("button");
-let brk=document.createElement("br")
-let brk2=document.createElement("br")
-if (input==''){  input="Empty";}
-btn.innerHTML=String(input);
-btn.onclick= function(){
-  btn.remove()
-  brk.remove()
-  brk2.remove()
-};
-btn.style.height="30px";
-document.getElementById("add").appendChild(brk);
-document.getElementById("add").appendChild(brk2);
-document.getElementById("add").insertBefore(btn,brk);
-//document.getElementById("add").appendChild(btn);
-
-document.getElementById("userInput").value='';
-
-}
-
-
-</script>
  </body>
 </html>
