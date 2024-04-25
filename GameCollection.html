@@ -9,7 +9,7 @@
     <script src="TemplateData(GameCollection)/UnityProgress.js"></script>
     <script src="Build(GameCollection)/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/GameCollection.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build(GameCollection)/GameCollection.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -18,7 +18,6 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Parkour</div>
       </div>
     </div>
   </body>
