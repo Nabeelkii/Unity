@@ -9,7 +9,7 @@
     <script src="TemplateData(Shoot)/UnityProgress.js"></script>
     <script src="Build(Shoot)/UnityLoader.js"></script>
     <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/Shoot.json", {onProgress: UnityProgress});
+      var unityInstance = UnityLoader.instantiate("unityContainer", "Build(Shoot)/Shoot.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
@@ -18,7 +18,6 @@
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Shooter</div>
       </div>
     </div>
   </body>
