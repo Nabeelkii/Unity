@@ -1,24 +1,92 @@
 <!DOCTYPE html>
 <html>
-  <title>Unity Games</title>
-<head>
-  <style>
-   .hea{
-	text-align:center;
-}
-   h1{
-	text-align:center;
-}
-</style>
-<h1>My Unity Projects</h1>
-<hr/>
+  <head>
+    <title>Unity Games</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+      }
 
- </head>
-<!--<img src="test.png" alt="If image cannot be displayed">-->
-<!--wrap something in  <a href> tag to link it, target=_unblank to open in new tab-->
- <body>
-  <a href="TheBasics.html" target=_unblank><h1>TheBasics</h1></a>
-<a href="Shoot.html" target=_unblank><h1>Shooting Game</h1></a>
-<a href="GameCollection.html" target=_unblank><h1>Random Games Collection</h1></a>
- </body>
+      h1 {
+        text-align: center;
+        color: #333;
+      }
+
+      .card-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      .card {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card-title {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+      }
+
+      .card-description {
+        font-size: 1em;
+        color: #666;
+        margin-bottom: 15px;
+      }
+
+      a {
+        text-decoration: none;
+        color: #007BFF;
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background-color: #ddd;
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>My Unity Projects</h1>
+    <hr/>
+
+    <div class="card-container">
+      <div class="card">
+        <a href="TheBasics.html" target="_blank">
+          <h2 class="card-title">The Basics</h2>
+        </a>
+        <p class="card-description">A platforming game made using Unity.</p>
+      </div>
+
+      <div class="card">
+        <a href="Shoot.html" target="_blank">
+          <h2 class="card-title">Shooting Game</h2>
+        </a>
+        <p class="card-description">A mini shooting game that was made in 1 hour</p>
+      </div>
+
+      <div class="card">
+        <a href="GameCollection.html" target="_blank">
+          <h2 class="card-title">Random Games Collection</h2>
+        </a>
+        <p class="card-description">A collection of small games where the camera and the movement was made from scratch to experiment with different types of cameras in games.</p>
+      </div>
+    </div>
+  </body>
 </html>
